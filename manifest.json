@@ -1,0 +1,12 @@
+{
+  "name": "GrokAI Web",
+  "short_name": "GrokAI",
+  "start_url": "/grokai-web/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#10b981",
+  "icons": [
+    { "src": "/grokai-web/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/grokai-web/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
