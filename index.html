@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrokAI • Multi AI Gratis</title>
+  <link rel="manifest" href="/grokai-web/manifest.json" />
+  <link rel="icon" href="/grokai-web/icons/icon-192.png" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/grokai-web/style.css" />
+</head>
+<body class="h-full bg-black text-white flex flex-col">
+  <div id="app" class="flex-1 flex flex-col max-w-5xl mx-auto w-full">
+    <!-- Header -->
+    <header class="border-b border-gray-800 p-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+        GrokAI Web
+      </h1>
+      <select id="modelSelect" class="bg-gray-900 border border-gray-700 rounded px-3 py-2 text-sm">
+        <option value="deepseek-r1-32b">DeepSeek-R1 32B (Powerful)</option>
+        <option value="qwen2.5-72b">Qwen2.5 72B (Cepat)</option>
+        <option value="llama3.1-70b">Llama 3.1 70B</option>
+        <option value="flux-schnell">Flux Image Gen</option>
+      </select>
+    </header>
+
+    <!-- Chat Area -->
+    <div id="messages" class="flex-1 overflow-y-auto p-6 space-y-4"></div>
+
+    <!-- Input -->
+    <div class="border-t border-gray-800 p-4">
+      <div class="flex gap-2">
+        <button id="voiceBtn" class="p-3 bg-gray-800 rounded-full hover:bg-gray-700">
+          Mic
+        </button>
+        <input 
+          id="userInput" 
+          type="text" 
+          placeholder="Ketik pesan atau gunakan suara..." 
+          class="flex-1 bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-emerald-500"
+          autocomplete="off"
+        />
+        <button id="sendBtn" class="px-6 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg font-semibold hover:opacity-90">
+          Kirim
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/grokai-web/script.js"></script>
+</body>
+</html>
